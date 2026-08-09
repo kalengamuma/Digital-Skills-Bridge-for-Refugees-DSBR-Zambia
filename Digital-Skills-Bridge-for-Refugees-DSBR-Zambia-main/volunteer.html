@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer | DSBR Zambia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-mark">DS</span> DSBR</a>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="volunteer.html" class="active">Volunteer</a></li>
+        <li><a href="donate.html" class="btn btn-sm btn-solid">Donate</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="hero-tag">Get Involved</span>
+      <h1>Volunteer / Join Us</h1>
+      <p>Share your skills as a facilitator, mentor, content creator, tech volunteer or community mobiliser. Every contribution strengthens the bridge.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:640px">
+      <form id="volunteer-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone / WhatsApp</label>
+            <input type="tel" name="phone">
+          </div>
+          <div class="form-group">
+            <label>Location</label>
+            <input type="text" name="location" placeholder="City or settlement">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>How would you like to help?</label>
+          <select name="role">
+            <option value="Facilitator">Community Facilitator / Trainer</option>
+            <option value="Mentor">Mentor / Career Coach</option>
+            <option value="Tech">Tech / Platform Development</option>
+            <option value="Content">Curriculum / Content Creation</option>
+            <option value="Outreach">Community Outreach</option>
+            <option value="Comms">Communications / Media</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Skills &amp; Experience</label>
+          <textarea name="skills" placeholder="Tell us about relevant skills, languages or experience..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Availability</label>
+          <input type="text" name="availability" placeholder="e.g. weekends, 5 hrs/week, remote">
+        </div>
+        <button type="submit" class="btn btn-solid">Submit Application</button>
+        <div id="form-msg" class="form-msg"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0">
+        <span>© 2026 DSBR – Zambia</span>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

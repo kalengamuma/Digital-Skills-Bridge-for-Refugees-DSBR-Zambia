@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | DSBR Zambia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-mark">DS</span> DSBR</a>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="mission.html">Mission</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donate.html" class="btn btn-sm btn-solid">Donate</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="hero-tag">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>We welcome conversations with funders, partners, volunteers, learners and anyone who shares our commitment to refugee empowerment.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:640px">
+      <form id="contact-form">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" required placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select name="subject">
+            <option value="Partnership">Partnership Inquiry</option>
+            <option value="Funding">Funding / Donation</option>
+            <option value="Volunteer">Volunteer</option>
+            <option value="Learner">Learner Support</option>
+            <option value="Media">Media / Press</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Send Message</button>
+        <div id="form-msg" class="form-msg"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0">
+        <span>© 2026 DSBR – Zambia</span>
+        <span>Kalenga Muma · Elijah</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
