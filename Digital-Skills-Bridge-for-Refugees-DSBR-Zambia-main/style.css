@@ -455,19 +455,56 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.5rem;
-  align-items: center;
+  align-items: stretch;
 }
 
 .partner-box {
-  background: var(--accent);
+  --pc: var(--navy); /* brand colour, overridden per-partner below */
+  background: var(--white);
   border-radius: 10px;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   text-align: center;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--pc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.partner-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+}
+
+.partner-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--pc);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.partner-name {
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--gray);
-  border: 1px solid var(--border);
+  color: var(--navy);
 }
+
+/* Per-partner brand colours */
+.partner-unhcr   { --pc: #0072BC; } /* UNHCR blue */
+.partner-undp    { --pc: #418FDE; } /* UNDP / UN family azure */
+.partner-caritas { --pc: #C8102E; } /* Caritas flame-cross red */
+.partner-teveta  { --pc: #2E7D32; } /* approximate — brand not confirmed */
+.partner-zicta   { --pc: #EE7203; } /* approximate — brand not confirmed */
+.partner-ngo     { --pc: var(--navy); }
 
 /* Footer */
 .footer {
